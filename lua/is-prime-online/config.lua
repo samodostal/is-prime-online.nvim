@@ -14,8 +14,7 @@ M.DEFAULT_OPTS = {
 	source = "twitch",
 	streamer_name = "thePrimeagen",
 	refresh_interval_in_seconds = 60 * 5,
-	callback_on_live = function()
-	end,
+	callback_on_live = function() end,
 	-- open_stream_on_start = true,
 }
 
