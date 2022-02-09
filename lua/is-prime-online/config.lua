@@ -15,7 +15,6 @@ M.DEFAULT_OPTS = {
 	streamer_name = "thePrimeagen",
 	refresh_interval_in_seconds = 60 * 5,
 	callback_on_start = function()
-		print("Prime started his stream!")
 	end,
 	-- open_stream_on_start = true,
 }
