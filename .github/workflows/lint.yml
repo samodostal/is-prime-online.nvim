@@ -14,5 +14,5 @@ jobs:
                   sudo apt-get install luarocks
                   sudo luarocks install luacheck
             - name: Lint
-              run: luacheck lua/image
+              run: luacheck lua/is-prime-online
 
