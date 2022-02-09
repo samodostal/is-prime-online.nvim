@@ -13,7 +13,7 @@ M.TWITCH_STATUS_IDENTIFIERS = {
 M.DEFAULT_OPTS = {
 	source = "twitch",
 	streamer_name = "thePrimeagen",
-	refresh_interval_in_seconds = 60,
+	refresh_interval_in_seconds = 60 * 5,
 	callback_on_start = function()
 		print("Prime started his stream!")
 	end,
