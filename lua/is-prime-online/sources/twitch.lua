@@ -66,7 +66,7 @@ M.check_status = function(opts)
 						true
 					)
 				then
-					M.status_live(opts.callback_on_start)
+					M.status_live(opts.callback_on_live)
 				elseif
 					string.find(
 						line,
@@ -84,10 +84,10 @@ M.check_status = function(opts)
 	return true
 end
 
-M.status_live = function(callback_on_start)
+M.status_live = function(callback_on_live)
 	-- Update global vim variable and call the lua callback
 	IS_PRIME_ONLINE = true
-	callback_on_start()
+	callback_on_live()
 end
 
 M.status_offline = function()
