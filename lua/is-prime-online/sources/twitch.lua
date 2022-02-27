@@ -4,7 +4,8 @@ local config = require("is-prime-online.config")
 local M = {}
 
 M.setup = function(opts)
-	if M.verify_installed_command() and M.verify_authenticated_command() then
+	-- TODO: Figure out how to verify authentication without slowing down on startup (call M.verify_authenticated_command)
+	if M.verify_installed_command() then
 		M.start_interval(opts)
 	end
 end
